@@ -1,15 +1,26 @@
-* {
+/* * {
     background-color: beige;
-}
+} */
 
 
-header {
+ header {
     display: flex;
-    background: #13293d;
-    color: #fff;
+    background-image: url(/assets/images/water.jpg);
+    background-color: steelblue;
+    /* color: rgb(3, 1, 1); */
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    height: 20% ; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
 }
+ /* #styledimg {
+    background-image:url(/assets/images/water.jpg) ;
+    width: 100%;
+ } */
+
 
 .page-wrapper {
     max-width: 90%;
@@ -18,21 +29,38 @@ header {
 }
 
 .page-section {
+    font-size: 20px;
+    color: green;
+    display: flex;
+    width: 80%;
+}
+
+p {
+    margin: 0 0 0 10% ;
+}
+
+/* .page-section {
     display: flex;
     flex: 0 0 20%;
     border-right: 5px solid blue;
     font-size: 50px;
     color: steelblue;
-}
+} */
 
-.about-me {
-    font-size: 20px;
-    color: green;
+
+
+#about-me {
     display: flex;
-    flex-flow: wrap;
-    /* justify-content: start; */
-
+    flex: 0 0 15%;
+    border-right: 3px solid steelblue;
+    font-size: 45px;
+    color: steelblue;
+    justify-content: flex-end;
 }
+    /* justify-content: start; */
+    /* this section went inside the section element above the h2  */
+
+/* } */
 
 p {
     width: 50%;
@@ -68,7 +96,7 @@ p {
 }
 
 .contact {
-
+    
     display: flex;
     justify-content: space-evenly;
     width: 100%;
