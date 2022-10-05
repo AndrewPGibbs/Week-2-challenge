@@ -5,18 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link your stylesheet below -->
+    <link rel="stylesheet" href="./assets/reset.css" />
     <link rel="stylesheet" href="./assets/style.css">
     <title>Your Name // Web Developer</title>
 </head>
 
 <body>
-    <!-- logo, navigation bar -->
     <header>
-        <h1 id="name">Andrew Gibbs</h1>
+        <h1 class="box-background">Andrew Gibbs</h1>
         <nav>
-            <ul id="head-list">
-                <!-- links to different sections in the page -->
+            <ul>
                 <li class="list"><a href="#aboutme">About Me</a></li>
                 <li class="list"><a href="#">Work</a></li>
                 <li class="list"><a href="#">Contact Me</a></li>
@@ -25,52 +23,50 @@
         </nav>
     </header>
 
-    <!-- subtitle -->
 
-    <section id="styledimg">
+    <figure class="banner">
+        <img class="banner-image"src="/assets/images/water.jpg" alt="blue waves">
+        <figcaption class="box-background subtitle" id="top">Web Devoloper</figcaption>
+    </figure>
 
-        <h2>Cool Subtitle Here</h2>
-
-    </section>
-
-    <main class="page-wrapper">
-        <!-- about me section -->
-        <section class="page-section">
-            <h2 id=about-me>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <main>
+        <section>
+            <aside id="about-me">
+                <h2>About Me</h2>
+            </aside>
+            <article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comm
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
 
         </section>
 
         <!-- portfolio section -->
-        <section class="page-section">
-            <h2 id="work">Work</h2>
-            <div class="image-container">
-                <img class src="./assets/images/1000x350.png" />
-                <div class="row">
-                    <div class="container-1">
-                        <img src="./assets/images/500x175.png" />
-                        <img src="./assets/images/500x175.png" />
-                    </div>
-                    <div class="container-2">
-                        <img src="./assets/images/500x175.png" />
-                        <img src="./assets/images/500x175.png" />
-                    </div>
-                </div>
-            </div>
+        <section>
+            <aside id="work">
+                <h2>Work</h2>
+            </aside>
+            <article class="parent-container">
+                <div class="portfolio-large"><a href="link-to-repo"></a><img class="image1" src="./assets/images/prework.png" alt="TBD"><figcaption class="box-background subtitle mi">Repo</figcaption></div>
+                <div class="portfolio-small"><a href="link-to-repo"></a><img class="image2" src="./assets/images/Horiseon.png" alt="TBD"><figcaption class="box-background subtitle ml">Repo</figcaption></div>
+                <div class="portfolio-small"><a href="link-to-repo"></a><img class="image2" src="./assets/images/500x175.png" alt="TBD"><figcaption class="box-background subtitle ml">Repo</figcaption></div>
+                <div class="portfolio-small"><a href="link-to-repo"></a><img class="image2" src="./assets/images/500x175.png" alt="TBD"><figcaption class="box-background subtitle ml">Repo</figcaption></div>
+                <div class="portfolio-small"><a href="link-to-repo"></a><img class="image2" src="./assets/images/500x175.png" alt="TBD"><figcaption class="box-background subtitle ml">Repo</figcaption></div>
+
+            </article>
 
         </section>
 
-        <!-- contact section -->
-        <section class="contact">
-            <h2 class="page-section">Contact Me</h2>
-            <p>555.555.5555</p>
-            <p>emailwebsite</p>
+    <section class="contact">
+    <h2>Contact Me</h2>
+    <p>555.555.5555</p>
+    <p>emailwebsite</p>
+    </section>
 
-        </section>
-    </main>
+</main>
+
 </body>
 
 </html>
