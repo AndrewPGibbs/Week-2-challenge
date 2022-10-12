@@ -28,7 +28,7 @@ header{
     font-size: 35px;
     font-weight: bold;
     text-align: right;
-    color: var(--primary)
+    color: var(--tertiary)
  }
 
  p {
@@ -158,9 +158,17 @@ figcaption {
    width: 100%;
    height: 100%;
    object-position: top;
-
-
  }
+ .image1 img:hover {
+   opacity: 1;
+ }
+ .parent-container img {
+      opacity: .7;
+      transition: .5s ease;
+ }
+img:hover {
+   opacity: 1;
+}
  .image2 {
    object-fit: cover;
    overflow: hidden;
@@ -169,7 +177,6 @@ figcaption {
    object-position: center;
  }
  .portfolio-small {
-    /* box-sizing: content-box; */
     position: relative;
     width: 47%;
     height: 100px;
@@ -186,7 +193,22 @@ figcaption {
    margin: 4px;
    font-weight: 500;
  }
-
+ .contact-items::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   display: block;
+   background: none repeat scroll 0 0 transparent;
+   height: 2px;
+   width: 0;
+   transition: all 0.3s ease 0.2s;
+   background: var(--primary)
+ }
+.contact-items:hover::after { 
+   width: 100%; 
+   left: 0; 
+}
 #contacts {
    display: flex;
    flex: row;
