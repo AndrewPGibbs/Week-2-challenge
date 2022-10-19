@@ -34,11 +34,10 @@ header{
  p {
     margin: 5px;
     color: var(--tertiary);
-    font-size:medium;
+    font-size: 18px;
     font-weight: 500;
     line-height: 1.2;
 }
-
  nav {
     display: flex;
     flex-direction: row;
@@ -108,9 +107,12 @@ figcaption {
     height: 100%;
     object-position: top;
  }
- a {
+ nav a {
     text-decoration: none;
-    color:var(--primary)
+    color:var(--primary);
+ }
+ section a{
+color: var(--tertiary);
  }
  aside{
     width: 10%;
@@ -124,7 +126,7 @@ figcaption {
     left: 110%;
     display: block;
     height: 100%;
-    width: 2px;
+    width: 3px;
     background: var(--primary);
  }
  section {
@@ -203,7 +205,10 @@ img:hover {
    height: 2px;
    width: 0;
    transition: all 0.3s ease 0.2s;
-   background: var(--primary)
+   background: var(--tertiary)
+ }
+ .contact-items a {
+   color: var(--tertiary)
  }
 .contact-items:hover::after { 
    width: 100%; 
